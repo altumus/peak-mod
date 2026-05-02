@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HookGun;
+namespace PeakShop;
 
 internal static class CoinHUD
 {
@@ -33,7 +33,7 @@ internal static class CoinHUD
         GUI.Label(coinsRect, $"{EconomyManager.Coins} COINS", _coinStyle);
 
         var hintRect = new Rect(rect.x, rect.y + 32, rect.width, 18);
-        GUI.Label(hintRect, "F9 — open shop", _hintStyle);
+        GUI.Label(hintRect, "find a shop kiosk", _hintStyle);
     }
 
     private static void EnsureLocalStyles()

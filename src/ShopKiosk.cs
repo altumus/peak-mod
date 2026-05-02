@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HookGun;
+namespace PeakShop;
 
 public class ShopKiosk : MonoBehaviour, IInteractibleConstant, IInteractible
 {

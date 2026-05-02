@@ -4,7 +4,7 @@ using Photon.Pun;
 using UnityEngine;
 using Zorro.Core;
 
-namespace HookGun;
+namespace PeakShop;
 
 internal static class ShopWindow
 {
@@ -111,7 +111,7 @@ internal static class ShopWindow
         GUILayout.FlexibleSpace();
         GUILayout.Label($"<b>{EconomyManager.Coins}</b> coins", ShopStyle.CoinLabel ?? ShopStyle.Label, GUILayout.Width(180));
         GUILayout.FlexibleSpace();
-        GUILayout.Label("F9 / ESC to close", ShopStyle.LabelDim, GUILayout.Width(160));
+        GUILayout.Label("ESC to close", ShopStyle.LabelDim, GUILayout.Width(160));
         GUILayout.EndHorizontal();
     }
 

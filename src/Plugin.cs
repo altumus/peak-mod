@@ -3,14 +3,14 @@ using BepInEx.Logging;
 using HarmonyLib;
 using UnityEngine;
 
-namespace HookGun;
+namespace PeakShop;
 
 [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
 public class Plugin : BaseUnityPlugin
 {
-    public const string PluginGuid = "com.altumus.hookgun";
-    public const string PluginName = "HookGun";
-    public const string PluginVersion = "0.3.0";
+    public const string PluginGuid = "com.altumus.peakshop";
+    public const string PluginName = "peak-shop";
+    public const string PluginVersion = "1.0.0";
 
     public static ManualLogSource Log = null!;
 
@@ -18,16 +18,11 @@ public class Plugin : BaseUnityPlugin
     {
         Log = Logger;
         new Harmony(PluginGuid).PatchAll();
-        Log.LogInfo($"{PluginName} v{PluginVersion} loaded. F9 toggles the item shop.");
+        Log.LogInfo($"{PluginName} v{PluginVersion} loaded. Interact with the shop kiosk next to a campfire.");
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F9))
-        {
-            ShopWindow.Toggle();
-        }
-
         if (ShopWindow.IsOpen && Input.GetKeyDown(KeyCode.Escape))
         {
             ShopWindow.IsOpen = false;

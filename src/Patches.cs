@@ -1,7 +1,7 @@
 using HarmonyLib;
 using UnityEngine;
 
-namespace HookGun;
+namespace PeakShop;
 
 [HarmonyPatch(typeof(CharacterInput), "Sample")]
 internal static class CharacterInput_Sample_Patch

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace HookGun;
+namespace PeakShop;
 
 internal static class Prices
 {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HookGun;
+namespace PeakShop;
 
 internal static class ShopStyle
 {
